@@ -1,0 +1,163 @@
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.header h1 {
+  color: var(--branco);
+  position: relative;
+}
+
+.header h1::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 3px solid var(--roxo-principal);
+  top: 5px;
+  left: -5px;
+  z-index: -1;
+  animation: rotacionar-quadrado 15s infinite linear;
+}
+
+.configuracoes {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@keyframes rotacionar-quadrado {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Botao slider */
+
+#chk-darkmode,
+#chk-idioma {
+  display: none;
+}
+
+.botao-switch {
+  position: relative;
+  background-color: var(--roxo-transparente);
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transition: all .5s ease-in-out;
+  position: relative;
+}
+
+.slider-darkmode::before {
+  content: '';
+  background: url('icones/lua-icone.png') no-repeat center center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: .5s;
+}
+
+.slider-darkmode::after {
+  content: '';
+  background: url('icones/sol-icone.png') no-repeat center center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s;
+}
+
+.slider-idioma::before {
+  content: '';
+  background: url('icones/brasil-icone.png') no-repeat center center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: .5s;
+}
+
+.slider-idioma::after {
+  content: '';
+  background: url('icones/eua-icone.png') no-repeat center center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s;
+}
+
+#chk-darkmode:checked~.botao-switch .slider {
+  transform: translateX(25px);
+}
+
+#chk-darkmode:checked~.botao-switch .slider::before {
+  opacity: 0;
+  transition: .5s;
+}
+
+#chk-darkmode:checked~.botao-switch .slider::after {
+  opacity: 1;
+  transition: .5s;
+}
+
+#chk-idioma:checked~.botao-switch .slider {
+  transform: translateX(25px);
+}
+
+#chk-idioma:checked~.botao-switch .slider::before {
+  opacity: 0;
+  transition: .5s;
+}
+
+#chk-idioma:checked~.botao-switch .slider::after {
+  opacity: 1;
+  transition: .5s;
+}
