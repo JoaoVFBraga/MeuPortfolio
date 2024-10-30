@@ -12,6 +12,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 99;
 }
 
 .conteudo-centralizado {
@@ -97,7 +99,7 @@
 }
 
 /* Estilos dos quadrados do background */
-.container-quadrados {
+/* .container-quadrados {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -170,7 +172,7 @@
   top: 60%;
   left: 60%;
   animation: anima-quadrados 8s linear infinite;
-}
+} */
 
 /* Estilos do botão do portfólio */
 .btn-portfolio-container {

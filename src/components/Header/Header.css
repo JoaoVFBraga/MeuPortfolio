@@ -1,11 +1,19 @@
 .header-container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 5px auto;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  background-color: var(--preto-background);
+  /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+  z-index: 99;
 }
 
 .header {
@@ -36,16 +44,6 @@
   display: flex;
   align-items: center;
   gap: 15px;
-}
-
-@keyframes rotacionar-quadrado {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /* Botao slider */

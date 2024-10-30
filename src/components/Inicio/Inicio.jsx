@@ -1,17 +1,22 @@
 import { useState } from 'react';
 import './Inicio.css';
+import BackgroundAnimado from '../BackgroundAnimado/BackgroundAnimado';
 
-export default function Inicio() {
+export default function Inicio(props) {
 
   const [escondeInicio, setEscondeInicio] = useState(false);
   const handleInicio = () => {
-    setEscondeInicio(true)
+    setEscondeInicio(true);
+    setTimeout(() => {
+      props.setExibePortfolio(true)
+    }, 1500)
   }
 
   return (
     <div className='container-background'>
+      <BackgroundAnimado />
       <div className={`container-inicio ${escondeInicio ? 'retiraContainer' : ''}`}>
-        <div className='container-quadrados'>
+        {/* <div className='container-quadrados'>
           <div></div>
           <div></div>
           <div></div>
@@ -22,7 +27,7 @@ export default function Inicio() {
           <div></div>
           <div></div>
           <div></div>
-        </div>
+        </div> */}
         <div className='conteudo-centralizado'>
           <div className='container-nome'>
             <span>J</span>
@@ -48,8 +53,6 @@ export default function Inicio() {
           <div className='quadrado-btn quadrado5'></div>
         </div>
       </div>
-
-
     </div>
   )
 }

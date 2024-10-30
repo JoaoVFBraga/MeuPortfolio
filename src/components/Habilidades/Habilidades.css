@@ -1,0 +1,41 @@
+.texto-habilidades {
+  color: var(--branco);
+  font-size: 1.3rem;
+  max-width: 60ch;
+  text-align: center;
+  margin: 80px auto 0;
+}
+
+.habilidades-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 100px 10px;
+}
+
+.habilidade h3 img {
+  max-width: 30px;
+}
+
+.habilidade h3 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 2px 15px;
+  font-size: 1.3rem;
+  border-bottom: 3px solid var(--roxo-principal);
+  color: var(--roxo-principal);
+}
+
+.habilidade p {
+  color: var(--branco);
+  font-size: 1.1rem;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.habilidade {
+  border: 3px solid var(--roxo-principal);
+  max-width: 400px;
+  height: 150px;
+}
