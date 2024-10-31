@@ -36,6 +36,7 @@
 
 .habilidade {
   border: 3px solid var(--roxo-principal);
+  border-radius: 2px;
   max-width: 400px;
   height: 150px;
 }

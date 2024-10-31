@@ -1,6 +1,7 @@
 import './Tecnologias.css';
 
 export default function Tecnologias() {
+
   return (
     <div className='formatacao-container'>
       <h2>Tecnologias</h2>
