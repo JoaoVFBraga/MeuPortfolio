@@ -62,7 +62,7 @@
 
 .botao-sobre-mim {
   position: relative;
-  width: 165px;
+  width: 160px;
   height: 40px;
 }
 
@@ -82,7 +82,7 @@
   font-weight: 500;
   color: var(--branco);
   background: var(--roxo-principal);
-  transition: 0.4s;
+  transition: transform 0.4s ease;
   cursor: pointer;
 }
 
@@ -108,6 +108,10 @@
 .botao-sobre-mim:hover::before {
   transform: rotate(10deg) scale(1.1);
   transition: 0.4s;
+}
+
+.btn-maior {
+  width: 195px;
 }
 
 /* .botao-sobre-mim {

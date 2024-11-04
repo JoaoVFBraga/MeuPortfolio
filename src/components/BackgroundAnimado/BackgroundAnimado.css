@@ -1,5 +1,5 @@
 .container-quadrados {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -8,6 +8,7 @@
   right: 0px;
   bottom: 0px;
   z-index: 1;
+  background-color: var(--preto-background);
 }
 
 .container-quadrados div {

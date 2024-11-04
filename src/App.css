@@ -9,6 +9,11 @@
   --gradiente-rosa-roxo: linear-gradient(to left, rgb(135, 43, 255), rgb(188, 43, 255));
 }
 
+.tema-claro {
+  --preto-background: rgb(248, 248, 248);
+  --branco: rgb(41, 41, 41);
+}
+
 * {
   font-family: 'Poppins';
 }
@@ -43,6 +48,7 @@
   left: -10px;
   top: 2px;
   animation: rotacionar-quadrado 15s infinite linear;
+  transition: 1s;
 }
 
 @keyframes fade-container {
