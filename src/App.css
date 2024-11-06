@@ -7,11 +7,13 @@
   --branco: rgb(252, 252, 252);
   --gradiente-roxo: linear-gradient(180deg, rgb(150, 69, 255), rgb(51, 7, 109));
   --gradiente-rosa-roxo: linear-gradient(to left, rgb(135, 43, 255), rgb(188, 43, 255));
+  --fundo-menu: rgba(27, 27, 27, 0.95);
 }
 
 .tema-claro {
   --preto-background: rgb(248, 248, 248);
   --branco: rgb(41, 41, 41);
+  --fundo-menu: rgba(248, 248, 248, 0.95);
 }
 
 * {

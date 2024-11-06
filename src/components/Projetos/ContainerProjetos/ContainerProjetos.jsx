@@ -18,9 +18,9 @@ export default function ContainerProjetos(props) {
           </div>
           <div className="btn-sobre-projeto">
             <div className="btn-acessar">
-              <a href={props.site} target="_blank">Acesse o site</a>
+              <a href={props.site} target="_blank">{props.idiomaPT ? 'Acesse o site' : 'Access the site'}</a>
             </div>
-            <a className="btn-repositorio" target="_blank" href={props.repositorio}>&lt;Repositório /&gt;</a>
+            <a className="btn-repositorio" target="_blank" href={props.repositorio}>{props.idiomaPT ? '<Repositório />' : '<Repository />'}</a>
           </div>
         </div>
       </div>
