@@ -24,7 +24,7 @@ export default function SobreMim({ idiomaPT, temaLight }) {
         </div>
         <div className='sobre-mim-imagens'>
           <div className='container-img'>
-            <img src="/fotos/minha-foto.jpeg" alt="" />
+            <img src="/photo.jpeg" alt="" />
             <div className='quadrado-foto quadrado-foto1'></div>
             <div className='quadrado-foto quadrado-foto2'></div>
             <div className='quadrado-foto quadrado-foto3'></div>

@@ -1,7 +1,6 @@
 .header-container {
   width: 100%;
   max-width: 1200px;
-  margin: 5px auto;
   position: fixed;
   top: 0;
   left: 50%;
@@ -153,4 +152,54 @@
 #chk-idioma:checked~.botao-switch .slider::after {
   opacity: 1;
   transition: .5s;
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header h1::before {
+    width: 15px;
+    height: 15px;
+    border: 3px solid var(--roxo-principal);
+  }
+
+  .botao-switch {
+    width: 50px;
+    height: 25px;
+  }
+
+  .slider {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slider-darkmode::before {
+    width: 22px;
+    height: 22px;
+  }
+
+  .slider-darkmode::after {
+    width: 22px;
+    height: 22px;
+  }
+
+  .slider-idioma::before {
+    width: 22px;
+    height: 22px;
+  }
+
+  .slider-idioma::after {
+    width: 22px;
+    height: 22px;
+  }
+
+  #chk-darkmode:checked~.botao-switch .slider {
+    transform: translateX(22px);
+  }
+
+  #chk-idioma:checked~.botao-switch .slider {
+    transform: translateX(22px);
+  }
 }

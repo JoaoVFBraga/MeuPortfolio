@@ -130,3 +130,143 @@
 .projetos-reduzido {
   left: -85px;
 }
+
+@media (max-width: 700px) {
+  .menu-container {
+    bottom: -80px;
+  }
+
+  .container-opcoes {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container-opcoes::before {
+    width: 60px;
+    height: 60px;
+  }
+
+  .opcao {
+    font-size: 1.3rem;
+  }
+
+  .opcao::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .opcao-selecionada {
+    font-size: 1.6rem;
+  }
+
+  .opcao-selecionada::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .sobre-mim {
+    top: -25px;
+  }
+
+  .sobre-mim-espacado {
+    top: -85px;
+  }
+
+  .tecnologias {
+    right: -140px;
+  }
+
+  .tecnologias-reduzido {
+    right: -90px;
+  }
+
+  .habilidades {
+    bottom: -25px;
+  }
+
+  .habilidades-espacado {
+    bottom: -90px;
+  }
+
+  .projetos {
+    left: -100px;
+  }
+
+  .projetos-reduzido {
+    left: -60px;
+  }
+
+  .seta-voltar {
+    right: 160px;
+    max-width: 40px;
+    top: -30px;
+  }
+
+  .seta-avancar {
+    right: -100px;
+    max-width: 40px;
+    top: -30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-container {
+    bottom: -65px;
+  }
+
+  .container-opcoes {
+    width: 80px;
+    height: 80px;
+  }
+
+  .container-opcoes::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .opcao {
+    font-size: 1rem;
+  }
+
+  .opcao::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .opcao-selecionada {
+    font-size: 1.4rem;
+  }
+
+  .opcao-selecionada::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .sobre-mim-espacado {
+    top: -55px;
+  }
+
+  .tecnologias {
+    right: -105px;
+  }
+
+  .habilidades-espacado {
+    bottom: -60px;
+  }
+
+  .projetos {
+    left: -70px;
+  }
+
+  .seta-voltar {
+    right: 130px;
+    max-width: 30px;
+    top: -25px;
+  }
+
+  .seta-avancar {
+    right: -75px;
+    max-width: 30px;
+    top: -25px;
+  }
+}
