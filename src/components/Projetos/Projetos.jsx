@@ -1,4 +1,3 @@
-import "./Projetos.css";
 import ContainerProjetos from "./ContainerProjetos/ContainerProjetos";
 
 export default function Projetos({ idiomaPT }) {
