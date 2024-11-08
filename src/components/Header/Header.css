@@ -72,7 +72,7 @@
 
 .slider-darkmode::before {
   content: '';
-  background: url('icones/lua-icone.png') no-repeat center center;
+  background: url('/icones/lua-icone.png') no-repeat center center;
   background-size: contain;
   width: 25px;
   height: 25px;
@@ -86,7 +86,7 @@
 
 .slider-darkmode::after {
   content: '';
-  background: url('icones/sol-icone.png') no-repeat center center;
+  background: url('/icones/sol-icone.png') no-repeat center center;
   background-size: contain;
   width: 25px;
   height: 25px;
@@ -100,7 +100,7 @@
 
 .slider-idioma::before {
   content: '';
-  background: url('icones/brasil-icone.png') no-repeat center center;
+  background: url('/icones/brasil-icone.png') no-repeat center center;
   background-size: contain;
   width: 25px;
   height: 25px;
@@ -114,7 +114,7 @@
 
 .slider-idioma::after {
   content: '';
-  background: url('icones/eua-icone.png') no-repeat center center;
+  background: url('/icones/eua-icone.png') no-repeat center center;
   background-size: contain;
   width: 25px;
   height: 25px;

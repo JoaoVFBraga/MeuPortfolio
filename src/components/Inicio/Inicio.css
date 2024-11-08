@@ -90,8 +90,9 @@
   font-family: monospace;
   font-size: 1.5rem;
   font-weight: 500;
-  border-right: 3px solid var(--branco);
+  border-right: 2px solid var(--branco);
   width: 26ch;
+  box-sizing: border-box;
   white-space: nowrap;
   opacity: 0;
   overflow: hidden;
@@ -253,5 +254,66 @@
   100% {
     opacity: 0;
     filter: blur(10px);
+  }
+}
+
+@media (max-width: 950px) {
+  .container-nome {
+    font-size: 6rem;
+    max-height: 110px;
+  }
+
+  .container-desenvolvedor p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .container-nome {
+    font-size: 4rem;
+    max-height: 70px;
+    gap: 6px;
+  }
+
+  .container-desenvolvedor p {
+    font-size: 1.2rem;
+  }
+
+  .btn-portfolio-container {
+    margin-top: 50px;
+    width: 150px;
+    height: 35px;
+  }
+
+  .btn-portfolio {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .container-nome {
+    font-size: 3rem;
+    max-height: 50px;
+    gap: 4px;
+  }
+
+  .container-nome span:nth-child(4) {
+    margin-right: 15px;
+  }
+
+  .container-desenvolvedor p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .container-nome {
+    font-size: 2rem;
+    max-height: 30px;
+    gap: 3px;
+  }
+
+  .container-desenvolvedor p {
+    font-size: 0.8rem;
   }
 }
