@@ -16,18 +16,6 @@ export default function Inicio(props) {
     <div className='container-background'>
       <BackgroundAnimado />
       <div className={`container-inicio ${escondeInicio ? 'retiraContainer' : ''}`}>
-        {/* <div className='container-quadrados'>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div> */}
         <div className='conteudo-centralizado'>
           <div className='container-nome'>
             <span>J</span>
